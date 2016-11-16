@@ -1,0 +1,23 @@
+1. Stimuli set
+2. Firing rate responses set
+3. Pretrained model (VGG)
+4. Reformat stimuli to fit input layer
+5. Sparse linear model fit from feature representation
+to responses
+6. Verify property of generalization
+7. Decoding of latent variables
+8. Retrain last layer and repeat
+
+
+
+First compute features for all images. This is 
+done in parallel for it takes 41 s for each image
+ResNet on my laptop
+
+Then train the sparselin to encode with
+crossvalidation, estimate error on test set
+
+Do decoding of latent variables
+
+Retrain last layer to refine and compare decoding
+performances with the first original case
