@@ -1,4 +1,8 @@
 1. Get stimulus set
+ 
+   We start from VGG16 with dataset objects/animals which have a 1100*1080 dimension
+
+
 2. Get firing rate responses set
 3. Download pretrained models (VGG, ResNet) [OK]
 4. -Reformat stimuli to fit input layer [Discuss]
@@ -9,6 +13,7 @@
 
    -Parallelize features computation with multiprocesing
    with shared memory
+
 5. Sparse linear model fit from feature representation
 to responses 
 6. Verify property of generalization

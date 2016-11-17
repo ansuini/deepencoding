@@ -1,10 +1,12 @@
 '''
-First encoding model with pretrained VGG16
+Load pretrained VGG16 and check time required for loading,
+preprocessing and computing features 
 '''
 
 # imports
 
-import time 
+import time
+import timeit
 import numpy as np
 from matplotlib import pyplot as plt
 
@@ -25,11 +27,14 @@ model = VGG16(weights='imagenet', include_top=True)
 if SHOW_SUMMARY:
     model.summary()
 
-# process image
+# import image
 
-img_path = 'elephant.jpg'
+tin = time.time()
+img_path = 'samples/bear.png'
 img = image.load_img(img_path, target_size=(224, 224))
 x = image.img_to_array(img)
+print('Import completed in %ds ' % (time.time() - tin ))
+
 
 if SHOW_IMG:
     plt.imshow(img)
