@@ -33,6 +33,7 @@ tin = time.time()
 img_path = 'samples/bear.png'
 img = image.load_img(img_path, target_size=(224, 224))
 x = image.img_to_array(img)
+print('Image shape after importing : [%d,%d,%d]' % (x.shape))
 print('Import completed in %ds ' % (time.time() - tin ))
 
 
@@ -45,10 +46,12 @@ if SHOW_IMG:
 tin = time.time()
 x = np.expand_dims(x, axis=0)
 x = preprocess_input(x)
+print('Image shape after preprocessing : [%d,%d,%d,%d]' % (x.shape))
 print('Preprocessing completed in %ds ' % (time.time() - tin ))
 
 # compute features
       
 tin = time.time()
 features = model.predict(x)
+print('Features shape : [%d,%d]' % (features.shape))
 print('Features extracted in %ds' % (time.time() - tin ))
