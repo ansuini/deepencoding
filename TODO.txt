@@ -1,23 +1,37 @@
-1. Get stimulus set
+1. Get stimulus set [STARTED]
  
    We start from VGG16 with dataset objects/animals which have a 1100*1080 dimension
 
+2. Get firing rate responses set [EIS]
 
-2. Get firing rate responses set
 3. Download pretrained models (VGG, ResNet) [OK]
-4. -Reformat stimuli to fit input layer [Discuss]
+
+4. -Reformat stimuli to fit input layer [OK for objects but we have to discuss for other stimuli]
+
     The original format is 649*405, aspect ratio : 0.624
     The format for imagenet is 224*224. I wonder if in 
     the paper by Guclu there is a discussion of this problem.
      
-
    -Parallelize features computation with multiprocesing
    with shared memory
 
-5. Sparse linear model fit from feature representation
+    This will allow us to train linear regression on the output of all layers. 
+    Output of a particular layer can be captured by (for example) :
+  
+    base_model = VGG19(weights='imagenet')
+    model = Model(input=base_model.input, output=base_model.get_layer('block4_pool').output)
+
+    just construct a model for each layer and train a linear sparse model 
+    for each model-layer
+
+
+5. Sparse linear model fit from feature representation (at all layers)
 to responses 
+
 6. Verify property of generalization
+
 7. Decoding of latent variables
+
 8. Retrain last layer and repeat
 
 
