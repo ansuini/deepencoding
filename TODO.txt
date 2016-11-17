@@ -1,9 +1,16 @@
-1. Stimuli set
-2. Firing rate responses set
-3. Pretrained model (VGG)
-4. Reformat stimuli to fit input layer
+1. Get stimulus set
+2. Get firing rate responses set
+3. Download pretrained models (VGG, ResNet) [OK]
+4. -Reformat stimuli to fit input layer [Discuss]
+    The original format is 649*405, aspect ratio : 0.624
+    The format for imagenet is 224*224. I wonder if in 
+    the paper by Guclu there is a discussion of this problem.
+     
+
+   -Parallelize features computation with multiprocesing
+   with shared memory
 5. Sparse linear model fit from feature representation
-to responses
+to responses 
 6. Verify property of generalization
 7. Decoding of latent variables
 8. Retrain last layer and repeat
@@ -12,7 +19,7 @@ to responses
 
 First compute features for all images. This is 
 done in parallel for it takes 41 s for each image
-ResNet on my laptop
+ResNet on my laptop and 3 s for VGG16
 
 Then train the sparselin to encode with
 crossvalidation, estimate error on test set
