@@ -1,2 +1,6 @@
 *~
 *.pyc
+README.md
+/data
+/samples
+.ipynb_checkpoints/
