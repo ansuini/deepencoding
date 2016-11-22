@@ -28,6 +28,9 @@
 5. Sparse linear model fit from feature representation (at all layers)
 to responses 
 
+   I am currently looking at the last layer of VGG16 and the responses in V1 (maybe),
+   these should be low in explained variance. Study better sckit.learn
+
 6. Verify property of generalization
 
 7. Decoding of latent variables

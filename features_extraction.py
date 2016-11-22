@@ -31,7 +31,7 @@ for root, dirs, files in os.walk(datapath):
         if file.endswith(".png") and not file.startswith("."):
              filelist.append(os.path.join(root, file))
 
-f = open( "filelist.p", "wb" )
+f = open( "filelist_bycat.p", "wb" )
 pickle.dump(filelist, f)
 f.close()
 
@@ -40,6 +40,10 @@ f.close()
 model = VGG16(weights='imagenet', include_top=True)
 
 # preprocessing and features computation (this can be done in parallel
+
+f = open( "filelist_ordered.p", "rb" )
+filelist = pickle.load(f)
+f.close()
 
 if COMPUTE_FEATS == True:
     
@@ -57,14 +61,14 @@ if COMPUTE_FEATS == True:
         count += 1
         print('Processed %d / %d' % (count, len(filelist)) )
 
-    f = open("features.p", "wb" )
+    f = open("features_bycat.p", "wb" )
     pickle.dump(features, f)
     f.close()
     print('Preprocessing and features computation completed in %ds ' % (time.time() - tin ))
 
 else:
 
-    f = open("features.p", "rb" )
+    f = open("features_bycat.p", "rb" )
     features = pickle.load(f)
     f.close()
     print('Features loaded')
