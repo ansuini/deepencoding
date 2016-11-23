@@ -1,22 +1,25 @@
 '''
-Create list of files following folders order
+Create list of files following index order
 '''
 
 import pickle
 import os
 import numpy as np
 
+root     = os.path.join(os.environ['WORKDIR'])
+datapath = os.path.join(root,'deepencoding','data','Renders_bw')
 
-datapath = os.path.join('/home','ans','repositories',
-                   'repos_thesis_HPC','deepencoding','data','Renders_bw')
+print("Files in index order from directory : " + datapath) 
 
-filelist = []
-for root, dirs, files in os.walk(datapath):
-    for file in files:
-        if file.endswith(".png") and not file.startswith("."):
-             filelist.append(os.path.join(root, file))
+f = open(os.path.join(datapath, 'trials.pkl'), 'rb')
+L = pickle.load(f)
+f.close()
 
-f = open( "filelist_bycat.p", "wb" )
+filelist = map(lambda l: l['stimPath'], L)
+filelist = [ os.path.join(root, 'deepencoding', 'data', file[2:] ) for file in filelist ]
+
+
+f = open( "filelist.p", "wb" )
 pickle.dump(filelist, f)
 f.close()
 
