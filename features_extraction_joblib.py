@@ -29,7 +29,8 @@ def compute_features(model, X, n_jobs):
 
     N = X.shape[0]
     chunk = int(N/n_jobs)
-
+   
+    print("N jobs : %d --- chunk dimension : %d" % (n_jobs, chunk) )
     parallelizer = Parallel(n_jobs=n_jobs, backend="threading")
 
     # prepare tasks

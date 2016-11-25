@@ -16,7 +16,7 @@ filelist = pickle.load(f)
 f.close()
 
 
-limit = 20
+limit = len(filelist)
 X = np.zeros((limit, 1,3,224,224 ) )
 count = 0
 

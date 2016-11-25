@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -N parallel_py
+#PBS -N parallel_feats
 #PBS -l walltime=12:00:00
 #PBS -l nodes=1:ppn=20
 #PBS -T flush_cache
@@ -13,5 +13,5 @@ rm -f $WD/parallel_feats*
 
 for j in 1 2 4 8 16 20
 do
-python features_extraction_joblib.py --numproc $j >> out
+python features_extraction_joblib.py --numprocs $j >> out
 done
