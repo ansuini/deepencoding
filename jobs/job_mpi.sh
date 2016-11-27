@@ -11,7 +11,9 @@ cd $WD
 echo 'Working directory is' $WD
 rm -f $WD/parallel_feats*
 
-for j in 1 2 4 8 16 20
+module load openmpi
+
+for j in 16
 do
-python features_extraction_joblib.py --numprocs $j >> out
+mpirun -np $j python features_extraction_mpi.py >> out
 done

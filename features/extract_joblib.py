@@ -82,7 +82,7 @@ if __name__ == '__main__':
     
     # load data
 
-    X = np.load(os.path.join(os.environ['WORKDIR'], 'deepencoding', 'preprocessed.npy' ) )
+    X = np.load(os.path.join(os.environ['WORKDIR'], 'deepencoding', 'preprocessed_small.npy' ) )
 
     # memory map
 
@@ -94,9 +94,13 @@ if __name__ == '__main__':
 
     # compute features last layer
     ti = time()
-    result = compute_features(models[-1], X_memmap, args.numprocs)
+    result = compute_features(models[3], X_memmap, args.numprocs)
+   
+    pool.close()
+    pool.join()
+
     print("N. procs : %d --- elapsed time : %g" % ( args.numprocs, time() - ti) )    
 
     # save
 
-    np.save("features_parallel_" + str(args.numprocs), result) 
+    np.save("features_parallel_layer_3_" + str(args.numprocs), result) 
