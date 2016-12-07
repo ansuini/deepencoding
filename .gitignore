@@ -1,5 +1,6 @@
 *~
 *.pyc
+*.swp
 README.md
 /data
 /samples
