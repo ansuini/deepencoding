@@ -1,8 +1,8 @@
-1. Get stimulus set [STARTED]
+1. Get stimulus set [OK]
  
    We start from VGG16 with dataset objects/animals which have a 1100*1080 dimension
 
-2. Get firing rate responses set [EIS]
+2. Get firing rate responses set [CORRECTION SPIKE-SORTING]
 
 3. Download pretrained models (VGG, ResNet) [OK]
 
@@ -12,41 +12,21 @@
     The format for imagenet is 224*224. I wonder if in 
     the paper by Guclu there is a discussion of this problem.
      
-   -Parallelize features computation with multiprocesing
-   with shared memory
+5. -Parallelization features computation with joblib [DONE]
+    ISSUE : hard lock joblib - keras
 
-    This will allow us to train linear regression on the output of all layers. 
-    Output of a particular layer can be captured by (for example) :
-  
-    base_model = VGG19(weights='imagenet')
-    model = Model(input=base_model.input, output=base_model.get_layer('block4_pool').output)
+6. -Theano - Keras mixing
 
-    just construct a model for each layer and train a linear sparse model 
-    for each model-layer
+    import theano
+    get_activations = theano.function([model.layers[0].input],
+    model.layers[1].output(train=False), allow_input_downcast=True)
+    activations = get_activations(X_batch) # same result as above
 
+7. -Parallelization GPU and MPI [DONE]
 
-5. Sparse linear model fit from feature representation (at all layers)
-to responses 
+8. Sparse linear model fit from feature representation (at all layers)
+   to responses 
 
-   I am currently looking at the last layer of VGG16 and the responses in V1 (maybe),
-   these should be low in explained variance. Study better sckit.learn
+9. Decoding latent variables
 
-6. Verify property of generalization
-
-7. Decoding of latent variables
-
-8. Retrain last layer and repeat
-
-
-
-First compute features for all images. This is 
-done in parallel for it takes 41 s for each image
-ResNet on my laptop and 3 s for VGG16
-
-Then train the sparselin to encode with
-crossvalidation, estimate error on test set
-
-Do decoding of latent variables
-
-Retrain last layer to refine and compare decoding
-performances with the first original case
+10. Retrain last layer and repeat
