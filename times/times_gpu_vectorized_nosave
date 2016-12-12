@@ -1,0 +1,52 @@
+Version complete
+--------------------------------------------------------------------------
+Error obtaining unique transport key from ORTE (orte_precondition_transports not present in
+the environment).
+
+  Local host: gn05-02
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+It looks like MPI_INIT failed for some reason; your parallel process is
+likely to abort.  There are many reasons that a parallel process can
+fail during MPI_INIT; some of which are due to configuration or environment
+problems.  This failure appears to be an internal failure; here's some
+additional information (which may only be relevant to an Open MPI
+developer):
+
+  PML add procs failed
+  --> Returned "Error" (-1) instead of "Success" (0)
+--------------------------------------------------------------------------
+Version complete
+--------------------------------------------------------------------------
+[[2452,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: gn05-08
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+Model : model_2 elapsed time --- 1.50149 --- with gpu
+Model : model_3 elapsed time --- 23.554 --- with gpu
+Model : model_4 elapsed time --- 22.0522 --- with gpu
+Model : model_5 elapsed time --- 12.417 --- with gpu
+Model : model_6 elapsed time --- 17.3889 --- with gpu
+Model : model_7 elapsed time --- 21.3143 --- with gpu
+Model : model_8 elapsed time --- 16.4882 --- with gpu
+Model : model_9 elapsed time --- 19.904 --- with gpu
+Model : model_10 elapsed time --- 22.7528 --- with gpu
+Model : model_11 elapsed time --- 25.7776 --- with gpu
+Model : model_12 elapsed time --- 23.0147 --- with gpu
+Model : model_13 elapsed time --- 25.7837 --- with gpu
+Model : model_14 elapsed time --- 29.1873 --- with gpu
+Model : model_15 elapsed time --- 32.4463 --- with gpu
+Model : model_16 elapsed time --- 31.7937 --- with gpu
+Model : model_17 elapsed time --- 33.337 --- with gpu
+Model : model_18 elapsed time --- 35.0528 --- with gpu
+Model : model_19 elapsed time --- 36.6008 --- with gpu
+Model : model_20 elapsed time --- 36.5578 --- with gpu
+Model : model_21 elapsed time --- 38.7821 --- with gpu
+Model : model_22 elapsed time --- 40.1686 --- with gpu
+Model : model_23 elapsed time --- 36.9563 --- with gpu
+Model : model_24 elapsed time --- 37.1223 --- with gpu

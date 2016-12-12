@@ -1,0 +1,192 @@
+ Running 1 parallel MPI processes
+Processor 1 loading model...
+Time for model : 0.239722 --- nprocs = 1
+Time for model : 5.3327 --- nprocs = 1
+Time for model : 23.9171 --- nprocs = 1
+Time for model : 21.975 --- nprocs = 1
+Time for model : 50.5762 --- nprocs = 1
+Time for model : 102.971 --- nprocs = 1
+Time for model : 101.872 --- nprocs = 1
+Time for model : 121.736 --- nprocs = 1
+Time for model : 157.464 --- nprocs = 1
+Time for model : 194.157 --- nprocs = 1
+Time for model : 192.529 --- nprocs = 1
+Time for model : 206.515 --- nprocs = 1
+Time for model : 232.211 --- nprocs = 1
+Time for model : 257.243 --- nprocs = 1
+Time for model : 256.053 --- nprocs = 1
+Time for model : 264.263 --- nprocs = 1
+Time for model : 271.773 --- nprocs = 1
+Time for model : 278.757 --- nprocs = 1
+Time for model : 277.875 --- nprocs = 1
+Time for model : 278.212 --- nprocs = 1
+Time for model : 280.825 --- nprocs = 1
+Time for model : 280.772 --- nprocs = 1
+Time for model : 281.298 --- nprocs = 1
+Whole time --- 4154.57 --- nprocs = 1
+ Running 2 parallel MPI processes
+ Running 2 parallel MPI processes
+Processor 2 loading model...
+Processor 2 loading model...
+Time for model : 0.198171 --- nprocs = 2
+Time for model : 4.05924 --- nprocs = 2
+Time for model : 13.7636 --- nprocs = 2
+Time for model : 11.8894 --- nprocs = 2
+Time for model : 27.0283 --- nprocs = 2
+Time for model : 54.1424 --- nprocs = 2
+Time for model : 53.1083 --- nprocs = 2
+Time for model : 63.7867 --- nprocs = 2
+Time for model : 82.215 --- nprocs = 2
+Time for model : 100.226 --- nprocs = 2
+Time for model : 99.4531 --- nprocs = 2
+Time for model : 106.519 --- nprocs = 2
+Time for model : 119.237 --- nprocs = 2
+Time for model : 131.738 --- nprocs = 2
+Time for model : 132.031 --- nprocs = 2
+Time for model : 135.858 --- nprocs = 2
+Time for model : 140.584 --- nprocs = 2
+Time for model : 143.589 --- nprocs = 2
+Time for model : 143.718 --- nprocs = 2
+Time for model : 144.236 --- nprocs = 2
+Time for model : 144.921 --- nprocs = 2
+Time for model : 145.157 --- nprocs = 2
+Time for model : 144.44 --- nprocs = 2
+Whole time --- 2147.24 --- nprocs = 2
+Whole time --- 2147.24 --- nprocs = 2
+ Running 4 parallel MPI processes
+ Running 4 parallel MPI processes
+ Running 4 parallel MPI processes
+ Running 4 parallel MPI processes
+Processor 4 loading model...
+Processor 4 loading model...
+Processor 4 loading model...
+Processor 4 loading model...
+Time for model : 0.098742 --- nprocs = 4
+Time for model : 2.69428 --- nprocs = 4
+Time for model : 7.4156 --- nprocs = 4
+Time for model : 6.02578 --- nprocs = 4
+Time for model : 13.4989 --- nprocs = 4
+Time for model : 27.0894 --- nprocs = 4
+Time for model : 26.3209 --- nprocs = 4
+Time for model : 31.5753 --- nprocs = 4
+Time for model : 40.7175 --- nprocs = 4
+Time for model : 49.8917 --- nprocs = 4
+Time for model : 49.6466 --- nprocs = 4
+Time for model : 53.2415 --- nprocs = 4
+Time for model : 59.4675 --- nprocs = 4
+Time for model : 66.0017 --- nprocs = 4
+Time for model : 65.8999 --- nprocs = 4
+Time for model : 67.8174 --- nprocs = 4
+Time for model : 69.8131 --- nprocs = 4
+Time for model : 71.568 --- nprocs = 4
+Time for model : 71.6815 --- nprocs = 4
+Time for model : 71.957 --- nprocs = 4
+Time for model : 72.2717 --- nprocs = 4
+Time for model : 72.2195 --- nprocs = 4
+Whole time --- 1074.74 --- nprocs = 4
+Time for model : 72.4608 --- nprocs = 4
+Whole time --- 1074.74 --- nprocs = 4
+Whole time --- 1074.74 --- nprocs = 4
+Whole time --- 1074.74 --- nprocs = 4
+ Running 8 parallel MPI processes
+ Running 8 parallel MPI processes
+ Running 8 parallel MPI processes
+ Running 8 parallel MPI processes
+ Running 8 parallel MPI processes
+ Running 8 parallel MPI processes
+ Running 8 parallel MPI processes
+ Running 8 parallel MPI processes
+Processor 8 loading model...
+Processor 8 loading model...
+Processor 8 loading model...
+Processor 8 loading model...
+Processor 8 loading model...
+Processor 8 loading model...
+Processor 8 loading model...
+Processor 8 loading model...
+Time for model : 0.0530181 --- nprocs = 8
+Time for model : 1.94402 --- nprocs = 8
+Time for model : 5.0473 --- nprocs = 8
+Time for model : 3.62071 --- nprocs = 8
+Time for model : 8.04423 --- nprocs = 8
+Time for model : 15.4812 --- nprocs = 8
+Time for model : 14.7878 --- nprocs = 8
+Time for model : 18.0918 --- nprocs = 8
+Time for model : 23.1768 --- nprocs = 8
+Time for model : 28.2102 --- nprocs = 8
+Time for model : 27.7788 --- nprocs = 8
+Time for model : 29.8772 --- nprocs = 8
+Time for model : 33.6154 --- nprocs = 8
+Time for model : 37.1185 --- nprocs = 8
+Time for model : 36.9711 --- nprocs = 8
+Time for model : 38.0827 --- nprocs = 8
+Time for model : 39.4058 --- nprocs = 8
+Time for model : 40.4188 --- nprocs = 8
+Time for model : 40.4787 --- nprocs = 8
+Time for model : 40.7369 --- nprocs = 8
+Time for model : 41.1288 --- nprocs = 8
+Time for model : 40.8567 --- nprocs = 8
+Whole time --- 612.086 --- nprocs = 8
+Whole time --- 612.085 --- nprocs = 8
+Time for model : 40.8609 --- nprocs = 8
+Whole time --- 612.085 --- nprocs = 8
+Whole time --- 612.086 --- nprocs = 8
+Whole time --- 612.085 --- nprocs = 8
+Whole time --- 612.085 --- nprocs = 8
+Whole time --- 612.086 --- nprocs = 8
+Whole time --- 612.085 --- nprocs = 8
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+ Running 16 parallel MPI processes
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Processor 16 loading model...
+Time for model : 0.0995221 --- nprocs = 16
+Time for model : 6.41685 --- nprocs = 16
+Time for model : 5.08082 --- nprocs = 16
+Time for model : 4.45417 --- nprocs = 16
+Time for model : 4.67045 --- nprocs = 16
+Time for model : 12.248 --- nprocs = 16
+Time for model : 22.3135 --- nprocs = 16
+Time for model : 35.362 --- nprocs = 16
+Time for model : 28.027 --- nprocs = 16
+Time for model : 25.8866 --- nprocs = 16
+Time for model : 27.6423 --- nprocs = 16
+Time for model : 24.2382 --- nprocs = 16
+Time for model : 30.0541 --- nprocs = 16
+Time for model : 53.2143 --- nprocs = 16
+Time for model : 27.8507 --- nprocs = 16
+Time for model : 49.2208 --- nprocs = 16
+Time for model : 52.6598 --- nprocs = 16
+Time for model : 32.9778 --- nprocs = 16
+Time for model : 31.8289 --- nprocs = 16
+Time for model : 33.7097 --- nprocs = 16
+Time for model : 26.1302 --- nprocs = 16
+Time for model : 25.7491 --- nprocs = 16
+Time for model : 24.666 --- nprocs = 16

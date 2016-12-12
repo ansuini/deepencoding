@@ -1,0 +1,34 @@
+Version complete
+--------------------------------------------------------------------------
+[[28989,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: gn05-04
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+Model : model_2 elapsed time --- 4.01679 --- with gpu
+Model : model_3 elapsed time --- 57.1651 --- with gpu
+Model : model_4 elapsed time --- 59.1951 --- with gpu
+Model : model_5 elapsed time --- 21.2723 --- with gpu
+Model : model_6 elapsed time --- 65.1333 --- with gpu
+Model : model_7 elapsed time --- 41.4155 --- with gpu
+Model : model_8 elapsed time --- 21.753 --- with gpu
+Model : model_9 elapsed time --- 28.0622 --- with gpu
+Model : model_10 elapsed time --- 31.5098 --- with gpu
+Model : model_11 elapsed time --- 31.6295 --- with gpu
+Model : model_12 elapsed time --- 25.4493 --- with gpu
+Model : model_13 elapsed time --- 28.9407 --- with gpu
+Model : model_14 elapsed time --- 32.9858 --- with gpu
+Model : model_15 elapsed time --- 37.4778 --- with gpu
+Model : model_16 elapsed time --- 32.5439 --- with gpu
+Model : model_17 elapsed time --- 34.4716 --- with gpu
+Model : model_18 elapsed time --- 35.6666 --- with gpu
+Model : model_19 elapsed time --- 37.7899 --- with gpu
+Model : model_20 elapsed time --- 36.6516 --- with gpu
+Model : model_21 elapsed time --- 37.9857 --- with gpu
+Model : model_22 elapsed time --- 37.4193 --- with gpu
+Model : model_23 elapsed time --- 37.9372 --- with gpu
+Model : model_24 elapsed time --- 37.5025 --- with gpu
