@@ -2,6 +2,7 @@
 *.pyc
 *.swp
 README.md
+/binaries
 /data
 /samples
 .ipynb_checkpoints/
